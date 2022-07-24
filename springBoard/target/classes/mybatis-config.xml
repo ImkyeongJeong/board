@@ -25,6 +25,6 @@
 <typeAliases>
 	<!-- Aliase 작성하면 mapper resultType에 alias이름 적어주면 됨 -->
   	<!-- <typeAlias alias="emp" type="com.company.mvc.EmpVO"/> -->
-  	<package name="com.company.board"/> <!-- 모든 패키지 다 스캔해서 모든 클래스에 대해서 엘리어스로 모두 등록해준다. (EmpVO, empVO 둘 다) -->
+  	<package name="com.company.mvc"/> <!-- 모든 패키지 다 스캔해서 모든 클래스에 대해서 엘리어스로 모두 등록해준다. (EmpVO, empVO 둘 다) -->
 </typeAliases>
 </configuration>

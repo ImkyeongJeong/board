@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.mvc.board.BoardMapper">
+
+	<select id="getboard" resultType="BoardVO">
+		SELECT *
+		FROM tbl_board
+		WHERE bno = #{bno}
+	</select>
+	
+	<select id="getList" resultType="BoardVO">
+		SELECT *
+		FROM tbl_board
+	</select>
+	
+	<insert id="insert">
+		INSERT INTO tbl_board(bno, title, content, writer)
+		VALUES (seq_board.nextval, #{title}, #{content}, #{writer})
+	</insert>
+	
+	<update id="update" parameterType="BoardVO">
+		UPDATE tbl_board
+		SET title = #{title},
+			writer = #{writer},
+			content = #{content}
+		WHERE bno = #{bno}
+	</update>
+	
+	<delete id="delete">
+		DELETE FROM tbl_board
+		WHERE bno = #{bno}
+	</delete>
+</mapper>

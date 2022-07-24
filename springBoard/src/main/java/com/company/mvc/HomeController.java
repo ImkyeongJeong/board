@@ -1,4 +1,4 @@
-package com.company.board;
+package com.company.mvc;
 
 import java.text.DateFormat;
 import java.util.Date;

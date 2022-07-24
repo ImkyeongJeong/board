@@ -11,5 +11,5 @@
 		<property name="configLocation" value="classpath:mybatis-config.xml"></property>
 	</bean>
 	
-	<mybatis-spring:scan base-package="com.company.board"/>
+	<mybatis-spring:scan base-package="com.company.mvc"/>
 </beans>
