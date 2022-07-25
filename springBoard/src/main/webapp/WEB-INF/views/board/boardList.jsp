@@ -13,7 +13,6 @@
 		<thead>
 			<th width="50">글번호</th>
 			<th width="150">제목</th>
-			<th width="200">내용</th>
 			<th width="100">작성자</th>
 			<th width="100">작성일자</th>
 		</thead>
@@ -21,8 +20,7 @@
 			<c:forEach var="board" items="${boardList}">
 				<tr>
 					<td>${board.bno}</td>
-					<td><a href="boardUpdate/${board.bno}">${board.title}</td>
-					<td>${board.content}</td>
+					<td><a href="board/${board.bno}">${board.title}</td>
 					<td>${board.writer}</td>
 					<td>${board.regDate}</td>
 				</tr>

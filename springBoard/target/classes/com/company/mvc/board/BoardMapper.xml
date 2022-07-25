@@ -11,6 +11,7 @@
 	<select id="getList" resultType="BoardVO">
 		SELECT *
 		FROM tbl_board
+		order by bno
 	</select>
 	
 	<insert id="insert">

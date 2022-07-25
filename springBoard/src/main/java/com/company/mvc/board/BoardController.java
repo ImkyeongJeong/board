@@ -24,6 +24,14 @@ public class BoardController {
 		return "board/boardList";
 	}
 	
+	//상세보기
+	@GetMapping("/board/{bno}")
+	public String getBoard(BoardVO vo, Model model, @PathVariable String bno) {
+		vo.setBno(bno);
+		model.addAttribute("board", mapper.getboard(vo));
+		return "board/get";
+	}
+	
 	//게시글 등록페이지 이동
 	@GetMapping("/boardInsert")
 	public String boardInsert() {
